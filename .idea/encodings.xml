@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core/account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core/device-meta" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core/feature-meta" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core/schedule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-core/strategy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sunny-web" charset="UTF-8" />
+  </component>
+</project>

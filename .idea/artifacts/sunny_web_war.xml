@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sunny-web:war">
+    <output-path>$PROJECT_DIR$/sunny-web/target</output-path>
+    <root id="archive" name="sunny-web.war">
+      <element id="artifact" artifact-name="sunny-web:war exploded" />
+    </root>
+  </artifact>
+</component>

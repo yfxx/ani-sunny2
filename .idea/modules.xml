@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/account/account.iml" filepath="$PROJECT_DIR$/sunny-core/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/device-meta/device-meta.iml" filepath="$PROJECT_DIR$/sunny-core/device-meta/device-meta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/feature-meta/feature-meta.iml" filepath="$PROJECT_DIR$/sunny-core/feature-meta/feature-meta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/schedule/schedule.iml" filepath="$PROJECT_DIR$/sunny-core/schedule/schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/strategy/strategy.iml" filepath="$PROJECT_DIR$/sunny-core/strategy/strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-adapter/sunny-adapter.iml" filepath="$PROJECT_DIR$/sunny-adapter/sunny-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-commons/sunny-commons.iml" filepath="$PROJECT_DIR$/sunny-commons/sunny-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-core/sunny-core.iml" filepath="$PROJECT_DIR$/sunny-core/sunny-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-interface/sunny-interface.iml" filepath="$PROJECT_DIR$/sunny-interface/sunny-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny-web/sunny-web.iml" filepath="$PROJECT_DIR$/sunny-web/sunny-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sunny2.iml" filepath="$PROJECT_DIR$/sunny2.iml" />
+    </modules>
+  </component>
+</project>

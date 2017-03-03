@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account" />
+        <module name="device-meta" />
+        <module name="feature-meta" />
+        <module name="schedule" />
+        <module name="strategy" />
+        <module name="sunny-adapter" />
+        <module name="sunny-commons" />
+        <module name="sunny-interface" />
+        <module name="sunny-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account" target="1.6" />
+      <module name="device-meta" target="1.5" />
+      <module name="feature-meta" target="1.5" />
+      <module name="schedule" target="1.5" />
+      <module name="strategy" target="1.5" />
+      <module name="sunny-adapter" target="1.5" />
+      <module name="sunny-commons" target="1.5" />
+      <module name="sunny-core" target="1.5" />
+      <module name="sunny-interface" target="1.5" />
+      <module name="sunny-web" target="1.5" />
+      <module name="sunny2" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
