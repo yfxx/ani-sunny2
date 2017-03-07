@@ -461,15 +461,7 @@
     </dependencies>
 
     <build>
-        <filters>
-            <filter>src/main/resources/properties/${build.profile.id}.properties</filter>
-        </filters>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
