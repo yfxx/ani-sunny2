@@ -1,6 +1,7 @@
 package com.ani.sunny.web.interceptor;
 
 import com.ani.sunny.commons.constant.Constants;
+import com.ani.sunny.commons.dto.user.UserSessionInfo;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

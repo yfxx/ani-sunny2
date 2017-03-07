@@ -1,5 +1,7 @@
 package com.ani.sunny.commons.dto.app;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -37,6 +39,25 @@ public class AniServiceEntranceDto {
         this.logoPath = logoPath;
         this.tagSet = tagSet;
         this.description = description;
+    }
+
+    public static List<com.ani.bus.service.commons.dto.aniservice.AniServiceEntranceDto> fromCommonsToLocal(List<AniServiceEntranceDto> entranceDtoList)
+    {
+        if (entranceDtoList == null){
+            return null;
+        }
+        List<com.ani.bus.service.commons.dto.aniservice.AniServiceEntranceDto> commonsEntranceList = new ArrayList<>();
+        for (AniServiceEntranceDto entranceDto: entranceDtoList) {
+            commonsEntranceList.add(new com.ani.bus.service.commons.dto.aniservice.AniServiceEntranceDto(
+                    entranceDto.entranceId,
+                    entranceDto.entranceName,
+                    entranceDto.entranceUrl,
+                    entranceDto.logoPath,
+                    entranceDto.tagSet,
+                    entranceDto.description)
+            );
+        }
+        return commonsEntranceList;
     }
 
     @Override

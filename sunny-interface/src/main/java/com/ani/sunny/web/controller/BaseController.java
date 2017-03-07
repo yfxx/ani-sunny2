@@ -2,7 +2,7 @@ package com.ani.sunny.web.controller;
 
 
 import com.ani.sunny.commons.constant.Constants;
-import com.ani.sunny.web.interceptor.UserSessionInfo;
+import com.ani.sunny.commons.dto.user.UserSessionInfo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
