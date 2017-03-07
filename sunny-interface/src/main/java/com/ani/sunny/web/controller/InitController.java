@@ -51,8 +51,8 @@ public class InitController extends BaseController{
             WebSocketSessionFactory sessionFactory = new WebSocketSessionFactory(
                     socketClient,
                     anicelMeta,
-                    Constants.aniServiceDto.aniServiceId,
-                    Constants.aniServiceDto.clientSecret
+                    Constants.appInfoDto.aniServiceId,
+                    Constants.appInfoDto.clientSecret
             );
             Constants.aniServiceSession = sessionFactory.getAniServiceSession();
             LOGGER.info("build ani service session success.");

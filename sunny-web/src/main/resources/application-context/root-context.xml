@@ -28,6 +28,7 @@
 	<context:load-time-weaver />
 
 	<context:annotation-config />
+	<context:component-scan base-package="com.ani.sunny.adapter.agent"/>
 
 	<!--<import resource="classpath:/application-context/persistence/BeansConfig.xml" />-->
 	<!--<import resource="classpath:/application-context/schedule/schedule-context.xml" />-->
@@ -37,6 +38,11 @@
 
 	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
 	<bean id="anicelMeta" class="com.ani.agent.service.core.config.AnicelMeta"/>
+	<bean id="agentTemplate" class="com.ani.agent.service.service.AgentTemplate">
+		<constructor-arg index="0" ref="anicelMeta"/>
+		<constructor-arg index="1" ref="restTemplateFactory"/>
+	</bean>
+	<bean id="restTemplateFactory" class="com.ani.agent.service.core.http.RestTemplateFactory" />
 
      <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
      	<property name="useCodeAsDefaultMessage" value="true" />
