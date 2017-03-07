@@ -42,7 +42,7 @@ public class Constants {
      * the web socket session
      */
     public static AniServiceSession aniServiceSession;
-    public static final ConcurrentHashMap<Long, List<Integer>> DEVICE_ID_RELATION_MAP = new ConcurrentHashMap<>();
+    public static final ConcurrentHashMap<Long, List<Integer>> DEVICE_ID_RELATION_MAP = new ConcurrentHashMap<Long,List<Integer>>();
     public static final String DEVICE_SHARE_MESSAGE = "deviceShareMessage";
     public static final String DEVICE_UNSHARE_MESSAGE = "deviceUnShareMessage";
     public static final String DEVICE_BOUND_MESSAGE = "deviceBoundMessage";

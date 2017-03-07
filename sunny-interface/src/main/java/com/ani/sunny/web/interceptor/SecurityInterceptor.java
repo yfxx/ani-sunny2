@@ -29,16 +29,15 @@ public class SecurityInterceptor implements HandlerInterceptor {
         HttpSession session = request.getSession();
         UserSessionInfo userSessionInfo = (UserSessionInfo)session.getAttribute(Constants.SUNNY_SESSION_NAME);
 
-
         String requestUri = extractUrl(request.getRequestURI());
         String contextPath = request.getContextPath();
         String url = requestUri.substring(contextPath.length());
-        if(excludeUrls.contains(url)){
+        if(excludeUrls.contains(url)) {
             return true;
-        } else{
-            if(userSessionInfo == null){
+        } else {
+            if(userSessionInfo == null) {
                 response.sendRedirect(contextPath + "/");
-            }else{
+            } else {
                 return true;
             }
         }
