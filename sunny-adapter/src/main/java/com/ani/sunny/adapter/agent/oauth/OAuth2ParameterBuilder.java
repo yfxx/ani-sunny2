@@ -3,7 +3,7 @@ package com.ani.sunny.adapter.agent.oauth;
 
 import com.ani.agent.service.commons.oauth.dto.AuthorizationCodeParameter;
 import com.ani.agent.service.commons.oauth.enumeration.GrantType;
-import com.ani.bus.service.commons.dto.aniservice.AniServiceDto;
+import com.ani.sunny.commons.dto.app.AppInfoDto;
 
 /**
  * Created by zhaoyu on 15-6-27.
@@ -11,7 +11,7 @@ import com.ani.bus.service.commons.dto.aniservice.AniServiceDto;
 public class OAuth2ParameterBuilder {
     private OAuth2ParameterBuilder() {}
 
-    public static AuthorizationCodeParameter buildForAccessToken(AniServiceDto aniServiceDto) {
+    public static AuthorizationCodeParameter buildForAccessToken(AppInfoDto aniServiceDto) {
         AuthorizationCodeParameter authorizationCodeParameter = new AuthorizationCodeParameter();
         authorizationCodeParameter.setClientId(aniServiceDto.aniServiceId)
                 .setClientSecret(aniServiceDto.clientSecret)
@@ -20,7 +20,7 @@ public class OAuth2ParameterBuilder {
         return authorizationCodeParameter;
     }
 
-    public static AuthorizationCodeParameter buildForRefreshToken(AniServiceDto aniServiceDto) {
+    public static AuthorizationCodeParameter buildForRefreshToken(AppInfoDto aniServiceDto) {
         AuthorizationCodeParameter authorizationCodeParameter = new AuthorizationCodeParameter();
         authorizationCodeParameter.setClientId(aniServiceDto.aniServiceId)
                 .setClientSecret(aniServiceDto.clientSecret)

@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +18,7 @@ import java.io.IOException;
 /**
  * Created by wyf on 17-3-7.
  */
+@Component("appService")
 public class JsonAppServiceImpl implements AppService{
     private final static Logger LOGGER = LoggerFactory.getLogger(JsonAppServiceImpl.class);
     private final static String FILE_PATH = "properties/AppInfo.json";

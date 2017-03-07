@@ -29,6 +29,7 @@
 
 	<context:annotation-config />
 	<context:component-scan base-package="com.ani.sunny.adapter.agent"/>
+	<context:component-scan base-package="com.ani.sunny.core.service"/>
 
 	<!--<import resource="classpath:/application-context/persistence/BeansConfig.xml" />-->
 	<!--<import resource="classpath:/application-context/schedule/schedule-context.xml" />-->

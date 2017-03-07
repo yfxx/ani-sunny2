@@ -9,6 +9,7 @@ import com.ani.agent.service.service.websocket.ObjectNotify;
 import com.ani.agent.service.service.websocket.observer.AniObjectCallMessageObserver;
 import com.ani.bus.service.commons.observer.MessageObserver;
 import com.ani.sunny.commons.constant.Constants;
+import com.ani.sunny.core.service.app.AppService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -28,10 +29,13 @@ public class InitController extends BaseController{
     private AnicelMeta anicelMeta;
     @Resource(name = "objectNotify")
     private ObjectNotify objectNotify;
+    @Resource
+    private AppService appService;
 
     @PostConstruct
     public void init() {
         try{
+            Constants.appInfoDto = appService.getAniServiceInfo();
             // you need to implement the Invokable interface and register on
             // WebSocketClient for anicloud platform to callback
             ClientInvokable invokable = new ClientInvokerImpl();
