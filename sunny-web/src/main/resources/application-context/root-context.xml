@@ -36,6 +36,7 @@
 	<!--<import resource="classpath:/application-context/cache/cache.xml" />-->
 
 	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+	<bean id="anicelMeta" class="com.ani.agent.service.core.config.AnicelMeta"/>
 
      <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
      	<property name="useCodeAsDefaultMessage" value="true" />

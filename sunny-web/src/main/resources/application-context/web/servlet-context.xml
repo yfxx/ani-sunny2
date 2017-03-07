@@ -45,7 +45,7 @@
 		</mvc:message-converters>
 	</mvc:annotation-driven>
 	<!--  静态资源的处理 提供 rest 风格的URL 提供可能	cache-period 静态资源在客户浏览器的缓存时间 -->
-	<mvc:resources mapping="/public/**" location="/public/" cache-period="31536000"/>
+	<!--<mvc:resources mapping="/public/**" location="/public/" cache-period="31536000"/>-->
 	<!--
         - Message source for this context, loaded from localized "messages_xx" files.
         - Files are stored inside src/main/resources
@@ -65,27 +65,27 @@
 		  p:cookiePath="\"
 		  p:defaultLocale="zh_CN"/>
 
-	<mvc:interceptors>
-		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"
-			  p:paramName="locale"/>
+	<!--<mvc:interceptors>-->
+		<!--<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"-->
+			  <!--p:paramName="locale"/>-->
 
-		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
-			<mvc:exclude-mapping path="/"/>
-			<mvc:exclude-mapping path="/public/**"/>
-			<bean class="com.ani.sunny.web.interceptor.SecurityInterceptor">
-				<property name="excludeUrls">
-					<list>
-						<value>/redirect</value>
-						<value>/login</value>
-						<value>/loginPage</value>
-						<value>/logout</value>
-						<value>/init/anicloud/anicloud</value>
-					</list>
-				</property>
-			</bean>
-		</mvc:interceptor>
-	</mvc:interceptors>
+		<!--<mvc:interceptor>-->
+			<!--<mvc:mapping path="/**"/>-->
+			<!--<mvc:exclude-mapping path="/"/>-->
+			<!--<mvc:exclude-mapping path="/public/**"/>-->
+			<!--<bean class="com.ani.sunny.web.interceptor.SecurityInterceptor">-->
+				<!--<property name="excludeUrls">-->
+					<!--<list>-->
+						<!--<value>/redirect</value>-->
+						<!--<value>/login</value>-->
+						<!--<value>/loginPage</value>-->
+						<!--<value>/logout</value>-->
+						<!--<value>/init/anicloud/anicloud</value>-->
+					<!--</list>-->
+				<!--</property>-->
+			<!--</bean>-->
+		<!--</mvc:interceptor>-->
+	<!--</mvc:interceptors>-->
 
 	<!-- CommonsMultipartResolver 默认没有文件上传解析器 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -94,18 +94,18 @@
 
 	<!-- websocket -->
 
-	<bean id="strategyInfoHandler" class="com.anicloud.sunny.web.websocket.DeviceStrategyInfoHandler"></bean>
-	<websocket:handlers>
-		<websocket:mapping path="/socket/strategy" handler="strategyInfoHandler"/>
-		<websocket:handshake-interceptors>
-			<bean class="com.anicloud.sunny.web.websocket.DeviceStrategyInfoHandshake"/>
-		</websocket:handshake-interceptors>
-	</websocket:handlers>
+	<!--<bean id="strategyInfoHandler" class="com.anicloud.sunny.web.websocket.DeviceStrategyInfoHandler"></bean>-->
+	<!--<websocket:handlers>-->
+		<!--<websocket:mapping path="/socket/strategy" handler="strategyInfoHandler"/>-->
+		<!--<websocket:handshake-interceptors>-->
+			<!--<bean class="com.anicloud.sunny.web.websocket.DeviceStrategyInfoHandshake"/>-->
+		<!--</websocket:handshake-interceptors>-->
+	<!--</websocket:handlers>-->
 
-	<bean class="org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean">
-		<property name="maxTextMessageBufferSize" value="8192" />
-		<property name="maxBinaryMessageBufferSize" value="81921" />
-	</bean>
+	<!--<bean class="org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean">-->
+		<!--<property name="maxTextMessageBufferSize" value="8192" />-->
+		<!--<property name="maxBinaryMessageBufferSize" value="81921" />-->
+	<!--</bean>-->
 	<!--处理连接池问题-->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 		<property name="preferredTestQuery" value="SELECT 1"/>
