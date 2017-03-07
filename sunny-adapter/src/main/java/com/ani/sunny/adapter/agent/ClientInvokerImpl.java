@@ -1,4 +1,4 @@
-package com.ani.sunny.web.service.agent;
+package com.ani.sunny.adapter.agent;
 
 import com.ani.agent.service.service.websocket.ClientInvokable;
 import com.ani.bus.service.commons.dto.anistub.AniStub;

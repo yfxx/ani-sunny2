@@ -1,4 +1,4 @@
-package com.ani.sunny.web.service;
+package com.ani.sunny.core.service.app;
 
 import com.ani.agent.service.commons.oauth.dto.AniOAuthAccessToken;
 import com.ani.bus.service.commons.dto.anidevice.DeviceMasterObjInfoDto;

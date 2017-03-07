@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Created by wyf on 17-3-6.
  */
-public class DeviceAndUserRelation extends AbstractDomain {
+public class DeviceUserRelation extends AbstractDomain {
     private static final long serialVersionUID = -2299657565471563732L;
 
     public Device device;
@@ -20,9 +20,9 @@ public class DeviceAndUserRelation extends AbstractDomain {
     public String screenName;
     public String deviceGroup;
 
-    public DeviceAndUserRelation(){}
+    public DeviceUserRelation(){}
 
-    public DeviceAndUserRelation(Device device, User user, Map<String,String> recentParams, String screenName, String deviceGroup){
+    public DeviceUserRelation(Device device, User user, Map<String,String> recentParams, String screenName, String deviceGroup){
         this.device = device;
         this.user = user;
         this.recentParams = recentParams;

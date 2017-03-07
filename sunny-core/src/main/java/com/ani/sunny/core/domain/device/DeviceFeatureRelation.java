@@ -6,16 +6,16 @@ import com.ani.sunny.core.domain.feature.Feature;
 /**
  * Created by wyf on 17-3-6.
  */
-public class DeviceAndFeatureRelation extends AbstractDomain{
+public class DeviceFeatureRelation extends AbstractDomain{
     private static final long serialVersionUID = -8458582653554072187L;
 
     public String deviceId;
     public Feature feature;
     public String curState;
 
-    public DeviceAndFeatureRelation() {}
+    public DeviceFeatureRelation() {}
 
-    public DeviceAndFeatureRelation(String deviceId, Feature feature, String curState) {
+    public DeviceFeatureRelation(String deviceId, Feature feature, String curState) {
         this.deviceId = deviceId;
         this.feature = feature;
         this.curState = curState;

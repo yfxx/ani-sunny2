@@ -3,20 +3,18 @@ package com.ani.sunny.web.controller;
 import com.ani.agent.service.core.config.AnicelMeta;
 import com.ani.agent.service.core.websocket.WebSocketClient;
 import com.ani.agent.service.core.websocket.WebSocketSessionFactory;
-import com.ani.agent.service.service.websocket.AccountNotify;
 import com.ani.agent.service.service.websocket.ClientInvokable;
+import com.ani.agent.service.service.websocket.ClientInvokerImpl;
 import com.ani.agent.service.service.websocket.ObjectNotify;
 import com.ani.agent.service.service.websocket.observer.AniObjectCallMessageObserver;
 import com.ani.bus.service.commons.observer.MessageObserver;
 import com.ani.sunny.commons.constant.Constants;
-import com.ani.sunny.web.service.agent.ClientInvokerImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import java.io.IOException;
 import java.util.Vector;
 
 /**

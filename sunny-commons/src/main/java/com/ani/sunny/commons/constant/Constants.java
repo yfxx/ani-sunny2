@@ -1,7 +1,7 @@
 package com.ani.sunny.commons.constant;
 
 import com.ani.bus.service.commons.session.AniServiceSession;
-import com.ani.sunny.commons.dto.app.AniServiceDto;
+import com.ani.sunny.commons.dto.app.AppInfoDto;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -34,7 +34,7 @@ public class Constants {
 
     public final static Long TOKEN_REFRESH_TIME_INTERVAL_IN_SECONDS = 60 * 60L;
 
-    public static AniServiceDto aniServiceDto = null;
+    public static AppInfoDto appInfoDto = null;
     /**
      * the different enter of sunny
      */
