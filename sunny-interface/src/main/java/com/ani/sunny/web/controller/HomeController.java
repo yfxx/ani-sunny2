@@ -40,8 +40,8 @@ public class HomeController extends BaseController{
     @RequestMapping(value ="/redirect")
     public String redirect(HttpServletRequest request, HttpServletResponse response, @RequestParam String code) {
         LOGGER.info("code is {}", code);
-//        AuthorizationCodeParameter authorizationCodeParameter = OAuth2ParameterBuilder.buildForAccessToken(Constants.appInfoDto);
-//        AniOAuthAccessToken oAuth2AccessToken = agentTemplate.getAniOAuthService().getOAuth2AccessToken(code, authorizationCodeParameter);
+        AuthorizationCodeParameter authorizationCodeParameter = OAuth2ParameterBuilder.buildForAccessToken(Constants.appInfoDto);
+        AniOAuthAccessToken oAuth2AccessToken = agentTemplate.getAniOAuthService().getOAuth2AccessToken(code, authorizationCodeParameter);
         return null;
     }
 
