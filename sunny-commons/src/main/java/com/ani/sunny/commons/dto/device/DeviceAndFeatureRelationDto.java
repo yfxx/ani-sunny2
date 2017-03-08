@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class DeviceAndFeatureRelationDto implements Serializable{
     private static final long serialVersionUID = 8248476150176556764L;
 
-    public String deviceId;
+    public DeviceDto deviceDto;
     public FeatureDto featureDto;
     public String curState;
 
@@ -18,8 +18,8 @@ public class DeviceAndFeatureRelationDto implements Serializable{
 
     }
 
-    public DeviceAndFeatureRelationDto(String deviceId, FeatureDto featureDto, String curState) {
-        this.deviceId = deviceId;
+    public DeviceAndFeatureRelationDto(DeviceDto deviceDto, FeatureDto featureDto, String curState) {
+        this.deviceDto = deviceDto;
         this.featureDto = featureDto;
         this.curState = curState;
     }

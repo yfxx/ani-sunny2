@@ -47,8 +47,8 @@ public class Device extends AbstractDomain {
 
     }
 
-    public static String buildIdentificationCode(){
-        return null;
+    public static String buildIdentificationCode(Long masterId,Integer slaveId){
+        return masterId + ":" + slaveId;
     }
 
 }
